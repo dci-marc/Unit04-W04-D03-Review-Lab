@@ -48,28 +48,6 @@ Create a model called `Pet` with the following fields:
 
 ---
 
-## Part 4: Repository, Service, and Controller
-
-1. Create a **BookRepository** that extends `JpaRepository<Book, Long>`
-
-2. Create a **BookService** with standard CRUD methods:
-
-   * `findAll()`
-   * `findById()`
-   * `save()`
-   * `deleteById()`
-
-3. Create a **BookController** with endpoints:
-
-   * `GET /books` → list all books
-   * `GET /books/new` → show form to create new book
-   * `POST /books` → create book (with validation)
-   * `GET /books/edit/{id}` → edit form
-   * `POST /books/update/{id}` → update
-   * `GET /books/delete/{id}` → delete
-
----
-
 
 
 
