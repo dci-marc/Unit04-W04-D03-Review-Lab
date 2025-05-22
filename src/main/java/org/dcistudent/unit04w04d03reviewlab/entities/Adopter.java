@@ -17,7 +17,7 @@ public final class Adopter {
   @Column(name = "phone")
   @NotBlank(message = "Adopter phone number is mandatory")
   private String phone;
-  @OneToMany(mappedBy = "id", cascade = CascadeType.ALL)
+  @OneToMany(mappedBy = "adopter", cascade = CascadeType.ALL)
   private List<Pet> pets;
 
   public Adopter(String name, String phone) {

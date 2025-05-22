@@ -17,7 +17,7 @@ public final class AdoptionCenter {
   @Column(name = "location")
   @NotBlank(message = "Adoption center location cannot be blank")
   private String location;
-  @OneToMany(mappedBy = "id", cascade = CascadeType.ALL)
+  @OneToMany(mappedBy = "adoptionCenter", cascade = CascadeType.ALL)
   private List<Adopter> adopters;
 
   public AdoptionCenter(String name, String location) {
