@@ -191,7 +191,7 @@ public class CloudinaryService {
 }
 ```
 
-3. Add a `String imageUrl` field to `Book`, and store the Cloudinary image URL after upload.
+3. Add a `String imageUrl` field to `Pet`, and store the Cloudinary image URL after upload.
 
 4. Add an upload input in your Thymeleaf form:
 
